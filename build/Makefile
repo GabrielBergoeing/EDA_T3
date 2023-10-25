@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named calculadora
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
+calculadora: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calculadora
+.PHONY : calculadora
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+calculadora/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/build
+.PHONY : calculadora/fast
 
 src/abb.o: src/abb.cpp.o
 .PHONY : src/abb.o
 
 # target to build an object file
 src/abb.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/abb.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abb.cpp.o
 .PHONY : src/abb.cpp.o
 
 src/abb.i: src/abb.cpp.i
@@ -142,7 +142,7 @@ src/abb.i: src/abb.cpp.i
 
 # target to preprocess a source file
 src/abb.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/abb.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abb.cpp.i
 .PHONY : src/abb.cpp.i
 
 src/abb.s: src/abb.cpp.s
@@ -150,7 +150,7 @@ src/abb.s: src/abb.cpp.s
 
 # target to generate assembly for a file
 src/abb.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/abb.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abb.cpp.s
 .PHONY : src/abb.cpp.s
 
 src/abbNode.o: src/abbNode.cpp.o
@@ -158,7 +158,7 @@ src/abbNode.o: src/abbNode.cpp.o
 
 # target to build an object file
 src/abbNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/abbNode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abbNode.cpp.o
 .PHONY : src/abbNode.cpp.o
 
 src/abbNode.i: src/abbNode.cpp.i
@@ -166,7 +166,7 @@ src/abbNode.i: src/abbNode.cpp.i
 
 # target to preprocess a source file
 src/abbNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/abbNode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abbNode.cpp.i
 .PHONY : src/abbNode.cpp.i
 
 src/abbNode.s: src/abbNode.cpp.s
@@ -174,15 +174,39 @@ src/abbNode.s: src/abbNode.cpp.s
 
 # target to generate assembly for a file
 src/abbNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/abbNode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abbNode.cpp.s
 .PHONY : src/abbNode.cpp.s
+
+src/calculator.o: src/calculator.cpp.o
+.PHONY : src/calculator.o
+
+# target to build an object file
+src/calculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/calculator.cpp.o
+.PHONY : src/calculator.cpp.o
+
+src/calculator.i: src/calculator.cpp.i
+.PHONY : src/calculator.i
+
+# target to preprocess a source file
+src/calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/calculator.cpp.i
+.PHONY : src/calculator.cpp.i
+
+src/calculator.s: src/calculator.cpp.s
+.PHONY : src/calculator.s
+
+# target to generate assembly for a file
+src/calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/calculator.cpp.s
+.PHONY : src/calculator.cpp.s
 
 src/node.o: src/node.cpp.o
 .PHONY : src/node.o
 
 # target to build an object file
 src/node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/node.cpp.o
 .PHONY : src/node.cpp.o
 
 src/node.i: src/node.cpp.i
@@ -190,7 +214,7 @@ src/node.i: src/node.cpp.i
 
 # target to preprocess a source file
 src/node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/node.cpp.i
 .PHONY : src/node.cpp.i
 
 src/node.s: src/node.cpp.s
@@ -198,7 +222,7 @@ src/node.s: src/node.cpp.s
 
 # target to generate assembly for a file
 src/node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/node.cpp.s
 .PHONY : src/node.cpp.s
 
 src/stack.o: src/stack.cpp.o
@@ -206,7 +230,7 @@ src/stack.o: src/stack.cpp.o
 
 # target to build an object file
 src/stack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/stack.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/stack.cpp.o
 .PHONY : src/stack.cpp.o
 
 src/stack.i: src/stack.cpp.i
@@ -214,7 +238,7 @@ src/stack.i: src/stack.cpp.i
 
 # target to preprocess a source file
 src/stack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/stack.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/stack.cpp.i
 .PHONY : src/stack.cpp.i
 
 src/stack.s: src/stack.cpp.s
@@ -222,7 +246,7 @@ src/stack.s: src/stack.cpp.s
 
 # target to generate assembly for a file
 src/stack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/stack.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/stack.cpp.s
 .PHONY : src/stack.cpp.s
 
 test/calculator.o: test/calculator.cpp.o
@@ -230,7 +254,7 @@ test/calculator.o: test/calculator.cpp.o
 
 # target to build an object file
 test/calculator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/calculator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/test/calculator.cpp.o
 .PHONY : test/calculator.cpp.o
 
 test/calculator.i: test/calculator.cpp.i
@@ -238,7 +262,7 @@ test/calculator.i: test/calculator.cpp.i
 
 # target to preprocess a source file
 test/calculator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/calculator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/test/calculator.cpp.i
 .PHONY : test/calculator.cpp.i
 
 test/calculator.s: test/calculator.cpp.s
@@ -246,7 +270,7 @@ test/calculator.s: test/calculator.cpp.s
 
 # target to generate assembly for a file
 test/calculator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/calculator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/test/calculator.cpp.s
 .PHONY : test/calculator.cpp.s
 
 # Help Target
@@ -257,13 +281,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
+	@echo "... calculadora"
 	@echo "... src/abb.o"
 	@echo "... src/abb.i"
 	@echo "... src/abb.s"
 	@echo "... src/abbNode.o"
 	@echo "... src/abbNode.i"
 	@echo "... src/abbNode.s"
+	@echo "... src/calculator.o"
+	@echo "... src/calculator.i"
+	@echo "... src/calculator.s"
 	@echo "... src/node.o"
 	@echo "... src/node.i"
 	@echo "... src/node.s"

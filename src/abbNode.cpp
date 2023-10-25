@@ -7,10 +7,10 @@
 
 #include "../include/abbNode.hpp"
 
-namespace trees {
+namespace eda {
 
 ABBNode::ABBNode():
-		ptrLeft(nullptr), data(-1), ptrRight(nullptr) {
+	ptrLeft(nullptr), data(-1), ptrRight(nullptr) {
 	// TODO Auto-generated constructor stub
 }
 
@@ -60,4 +60,4 @@ ABBNode::~ABBNode() {
 	}
 }
 
-} /* namespace trees */
+} /* namespace eda */

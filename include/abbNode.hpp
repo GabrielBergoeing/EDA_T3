@@ -8,7 +8,7 @@
 #ifndef ABBNODE_HPP_
 #define ABBNODE_HPP_
 
-namespace trees {
+namespace eda {
 
 class ABBNode {
 private:
@@ -30,6 +30,6 @@ public:
 	virtual ~ABBNode();
 };
 
-} /* namespace trees */
+} /* namespace eda */
 
-#endif /* ABBNODE_H_ */
+#endif /* ABBNODE_HPP_ */

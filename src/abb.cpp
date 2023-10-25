@@ -8,7 +8,7 @@
 #include "../include/abb.hpp"
 #include <iostream>
 
-namespace trees {
+namespace eda {
 
 ABB::ABB():root(nullptr) {
 	// TODO Auto-generated constructor stub
@@ -149,4 +149,4 @@ ABB::~ABB() {
 	delete root;
 }
 
-} /* namespace trees */
+} /* namespace eda */

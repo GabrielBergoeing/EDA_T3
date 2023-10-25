@@ -10,8 +10,8 @@ LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(test test/calculator.cpp src/abb.cpp src/abbNode.cpp src/node.cpp src/stack.cpp)
-target_include_directories(test PUBLIC ${PROJECT_SOURCE_DIR}/include)
+add_executable(calculadora test/calculator.cpp src/abb.cpp src/abbNode.cpp src/node.cpp src/stack.cpp src/calculator.cpp)
+target_include_directories(calculadora PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
 
 

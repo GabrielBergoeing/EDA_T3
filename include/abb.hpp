@@ -10,7 +10,7 @@
 
 #include "abbNode.hpp"
 
-namespace trees {
+namespace eda {
 
 class ABB {
 private:
@@ -32,6 +32,6 @@ public:
 	virtual ~ABB();
 };
 
-} /* namespace trees */
+} /* namespace eda */
 
 #endif /* ABB_HPP_ */
