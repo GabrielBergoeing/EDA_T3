@@ -1,5 +1,6 @@
 #include "../include/calculator.hpp"
 #include "../include/stack.hpp"
+#include "../include/abbCC.hpp"
 
 // Funcion prec y infixToPostfix desde https://www.geeksforgeeks.org/convert-infix-expression-to-postfix-expression/
 
@@ -117,4 +118,88 @@ int solveCalculation(std::string str) {
         }
     }
     return ans;
+}
+
+void printEquationTree(std::string postfix){
+    char c;
+    int num, t = 0;
+    eda::ABBCCNode *temp = nullptr;
+    eda::ABBCC binaryTree;
+    std::string sum, aux, sign;
+    eda::Stack numberStack, treeStack;
+
+    // Arreglo de funciones para hacer las operaciones
+    char ops[5] = {'+', '-', '*', '/', '^'};
+    
+    for (int idx = 0; idx < postfix.length(); idx++){ //Caso de tener 'ans'
+        c = postfix[idx];
+        if((postfix.find("ans") != std::string::npos) && (c == 'a') && (idx + 2 < postfix.length())){
+            if((postfix[idx+1] == 'n') && (postfix[idx+2] == 's')){
+                numberStack.push(new eda::Node(std::to_string(idx)));
+                treeStack.push(new eda::Node("ans"));
+                idx += 2;
+                continue;
+            }
+        }
+        if (c == ' ') {
+            if (sum != ""){
+                numberStack.push(new eda::Node(sum));
+                treeStack.push(new eda::Node(sum));
+                sum="";
+            }
+            continue;
+        }
+        if (isdigit(c)) sum += c; //Numbers
+        else if (isOperator(c, ops)){ //Operators
+            for (int j = 0; j<5; j++) {
+                if (c == ops[j]) {
+                    num = stoi(numberStack.top()->getData());
+                    numberStack.pop();
+                    num = std::max(num, stoi(numberStack.top()->getData()));
+                    numberStack.pop();
+                    sign = c;
+                    treeStack.push(new eda::Node(sign));
+                    numberStack.push(new eda::Node(std::to_string(num)));
+                    treeStack.push(new eda::Node(std::to_string(num)));
+                    break;
+                }
+            }
+        } else { //Variables
+            aux = c;
+            numberStack.push(new eda::Node(std::to_string(t)));
+            treeStack.push(new eda::Node(aux));
+        }
+    }
+
+    //Segundo loop for, permite subir los nodos y symbols del arból
+    while(!treeStack.isEmpty()){
+        aux = treeStack.top()->getData();
+        std::cout << aux <<std::endl;
+
+        if((isOperator(aux.at(0), ops)) && (temp != nullptr)){ //Operators & Variables
+            temp->setSymbol(aux.at(0));
+    
+        } else if (isdigit(aux.at(0))){ //Numbers
+            binaryTree.insert(stoi(aux));
+            temp = binaryTree.find(stoi(aux));
+    
+        } else { //Variables
+            binaryTree.insert(t);
+            temp = binaryTree.find(t);
+            t++;
+            temp->setSymbol(aux.at(0));
+        }
+        treeStack.pop();
+    }
+    binaryTree.traverse();
+
+}
+
+bool isOperator(char c, char *oplist){
+    for(int j = 0; j < sizeof(*oplist)/sizeof(oplist[0]); j++){
+        if(c == oplist[j]){
+            return true;
+        }
+    }
+    return false;
 }

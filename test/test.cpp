@@ -1,9 +1,9 @@
-#include"calculator.hpp"
-#include"abb.hpp"
+#include "calculator.hpp"
+#include "abbCC.hpp"
 
 int main() {
     std::cout << """"""" CALCULADORA INTERACTIVA """"""" << std::endl;
-    std::string expresion;
+    std::string expresion, exp = "";
     std::map<std::string, int> variables;
     variables["ans"] = 0;
 
@@ -13,9 +13,11 @@ int main() {
         if (expresion == "FIN") break; 
         else if (expresion == "ans") std::cout << "= " << variables["ans"] << std::endl;
         else if (expresion == "tree") {
-            /* * * * * * * * * * * * * 
-              funcion de abb! traverse 
-             * * * * * * * * * * * * */
+            if (exp == ""){
+                std::cout << "Error: no existe ecuacion registrada para imiprimir!" << std::endl;
+            } else {
+                printEquationTree(exp);
+            }
         } else {    // Entonces se ve si es asignacion y sino, es expresion
             bool isAsign = false;
             for (int i = 0; i<expresion.length(); i++) {
@@ -26,7 +28,7 @@ int main() {
                     break;
                 }
             } if (!isAsign) {
-                std::string exp = infixToPostfix(expresion);    // Se convierte a postfija
+                exp = infixToPostfix(expresion);    // Se convierte a postfija
                 std::cout << "En expresion postfija: " << exp << std::endl;
                 std::string aux, exp_final;
 

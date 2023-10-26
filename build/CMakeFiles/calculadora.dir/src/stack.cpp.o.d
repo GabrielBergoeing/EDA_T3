@@ -1,8 +1,7 @@
 CMakeFiles/calculadora.dir/src/stack.cpp.o: \
- /home/edauandes/Documents/eda23/t3/program/src/stack.cpp \
- /usr/include/stdc-predef.h \
- /home/edauandes/Documents/eda23/t3/program/src/../include/stack.hpp \
- /home/edauandes/Documents/eda23/t3/program/src/../include/node.hpp \
+ /home/edauandes/Desktop/EDA_T3/src/stack.cpp /usr/include/stdc-predef.h \
+ /home/edauandes/Desktop/EDA_T3/src/../include/stack.hpp \
+ /home/edauandes/Desktop/EDA_T3/src/../include/node.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

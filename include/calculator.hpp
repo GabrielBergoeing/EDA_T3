@@ -17,5 +17,7 @@ int mult(int a, int b);
 int divs(int a, int b);
 int pot(int a, int b);
 int solveCalculation(std::string str);
+void printEquationTree(std::string postfix);
+bool isOperator(char c, char *oplist);
 
 #endif /* CALCULATOR_HPP_ */

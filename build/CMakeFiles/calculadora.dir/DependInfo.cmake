@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/edauandes/Documents/eda23/t3/program/src/abb.cpp" "CMakeFiles/calculadora.dir/src/abb.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/abb.cpp.o.d"
-  "/home/edauandes/Documents/eda23/t3/program/src/abbNode.cpp" "CMakeFiles/calculadora.dir/src/abbNode.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/abbNode.cpp.o.d"
-  "/home/edauandes/Documents/eda23/t3/program/src/calculator.cpp" "CMakeFiles/calculadora.dir/src/calculator.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/calculator.cpp.o.d"
-  "/home/edauandes/Documents/eda23/t3/program/src/node.cpp" "CMakeFiles/calculadora.dir/src/node.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/node.cpp.o.d"
-  "/home/edauandes/Documents/eda23/t3/program/src/stack.cpp" "CMakeFiles/calculadora.dir/src/stack.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/stack.cpp.o.d"
-  "/home/edauandes/Documents/eda23/t3/program/test/calculator.cpp" "CMakeFiles/calculadora.dir/test/calculator.cpp.o" "gcc" "CMakeFiles/calculadora.dir/test/calculator.cpp.o.d"
+  "/home/edauandes/Desktop/EDA_T3/src/abbCC.cpp" "CMakeFiles/calculadora.dir/src/abbCC.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/abbCC.cpp.o.d"
+  "/home/edauandes/Desktop/EDA_T3/src/abbCCNode.cpp" "CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o.d"
+  "/home/edauandes/Desktop/EDA_T3/src/calculator.cpp" "CMakeFiles/calculadora.dir/src/calculator.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/calculator.cpp.o.d"
+  "/home/edauandes/Desktop/EDA_T3/src/node.cpp" "CMakeFiles/calculadora.dir/src/node.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/node.cpp.o.d"
+  "/home/edauandes/Desktop/EDA_T3/src/stack.cpp" "CMakeFiles/calculadora.dir/src/stack.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/stack.cpp.o.d"
+  "/home/edauandes/Desktop/EDA_T3/test/test.cpp" "CMakeFiles/calculadora.dir/test/test.cpp.o" "gcc" "CMakeFiles/calculadora.dir/test/test.cpp.o.d"
   )
 
 # Targets to which this target links.

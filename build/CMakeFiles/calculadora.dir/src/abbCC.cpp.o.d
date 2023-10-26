@@ -1,6 +1,8 @@
-CMakeFiles/test.dir/test/calculator.cpp.o: \
- /home/edauandes/Documents/eda23/t3/program/test/calculator.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
+CMakeFiles/calculadora.dir/src/abbCC.cpp.o: \
+ /home/edauandes/Desktop/EDA_T3/src/abbCC.cpp /usr/include/stdc-predef.h \
+ /home/edauandes/Desktop/EDA_T3/src/../include/abbCC.hpp \
+ /home/edauandes/Desktop/EDA_T3/src/../include/abbCCNode.hpp \
+ /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -143,8 +145,4 @@ CMakeFiles/test.dir/test/calculator.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /home/edauandes/Documents/eda23/t3/program/include/stack.hpp \
- /home/edauandes/Documents/eda23/t3/program/include/node.hpp \
- /home/edauandes/Documents/eda23/t3/program/include/abb.hpp \
- /home/edauandes/Documents/eda23/t3/program/include/abbNode.hpp
+ /usr/include/c++/11/bits/istream.tcc

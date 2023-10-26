@@ -5,20 +5,20 @@
  *      Author: jsaavedr
  */
 
-#include "../include/abb.hpp"
+#include "../include/abbCC.hpp"
 #include <iostream>
 
 namespace eda {
 
-ABB::ABB():root(nullptr) {
+ABBCC::ABBCC():root(nullptr) {
 	// TODO Auto-generated constructor stub
 }
 
-void ABB::insert_rec(int val, ABBNode* node){
+void ABBCC::insert_rec(int val, ABBCCNode* node){
 	if (val < node->getData()){
 		//LEFT
 		if (node->getLeft() == nullptr){
-			node->setLeft(new ABBNode(val));
+			node->setLeft(new ABBCCNode(val));
 			//std::cout<<val << " inserted on left" << std::endl;
 		}
 		else{
@@ -28,7 +28,7 @@ void ABB::insert_rec(int val, ABBNode* node){
 	else{
 		//RIGHT
 		if (node->getRight() == nullptr){
-			node->setRight(new ABBNode(val));
+			node->setRight(new ABBCCNode(val));
 			//std::cout<<val << " inserted on right" << std::endl;
 		}
 		else{
@@ -37,17 +37,17 @@ void ABB::insert_rec(int val, ABBNode* node){
 	}
 }
 
-void ABB::insert(int val){
+void ABBCC::insert(int val){
 	if (root == nullptr){
-		root = new ABBNode(val);
+		root = new ABBCCNode(val);
 	}
 	else{
 		insert_rec(val, root);
 	}
 }
 
-ABBNode* ABB::find_rec(int val, ABBNode* node){
-	ABBNode* ans = nullptr;
+ABBCCNode* ABBCC::find_rec(int val, ABBCCNode* node){
+	ABBCCNode* ans = nullptr;
 
 	if (node->getData() == val){
 		ans = node;
@@ -64,39 +64,43 @@ ABBNode* ABB::find_rec(int val, ABBNode* node){
 	return ans;
 }
 
-ABBNode* ABB::find(int val){
-	ABBNode* ans = nullptr;
+ABBCCNode* ABBCC::find(int val){
+	ABBCCNode* ans = nullptr;
 	ans = find_rec(val, root);
 	return ans;
 }
 
-void ABB::traverse_rec(ABBNode* node, int level){
+void ABBCC::traverse_rec(ABBCCNode* node, int level){
 	if (node != nullptr){
 		std::cout << std::string(level*2, '-');
-		std::cout << node->getData() << " | s = " << node->getSize() << std::endl;
+		if(node->getSymbol() != '\0'){
+			std::cout << node->getSymbol() << std::endl;
+		} else {
+			std::cout << node->getData() << std::endl;
+		}
 		traverse_rec(node->getLeft(), level + 1);
 		traverse_rec(node->getRight(), level + 1);
 	}
 }
 
-void ABB::traverse(){
+void ABBCC::traverse(){
 	traverse_rec(root, 1);
 }
 
 /*extras*/
-void ABB::showASC_rec(ABBNode* node){
+void ABBCC::showASC_rec(ABBCCNode* node){
 	if (node != nullptr){
 		showASC_rec(node->getLeft());
 		std::cout << node->getData() << " " << std::flush;
 		showASC_rec(node->getRight());
 	}
 }
-void ABB::showASC(){
+void ABBCC::showASC(){
 	showASC_rec(root);
 	std::cout << std::endl;
 }
 
-void ABB::updateSize_rec(ABBNode* node){
+void ABBCC::updateSize_rec(ABBCCNode* node){
 	if (node != nullptr){
 		updateSize_rec(node->getLeft());
 		updateSize_rec(node->getRight());
@@ -112,13 +116,13 @@ void ABB::updateSize_rec(ABBNode* node){
 	}
 }
 
-void ABB::updateSize(){
+void ABBCC::updateSize(){
 	updateSize_rec(root);
 }
 
 
-ABBNode* ABB::k_element_rec(int k, ABBNode* node){
-	ABBNode* ans = nullptr;
+ABBCCNode* ABBCC::k_element_rec(int k, ABBCCNode* node){
+	ABBCCNode* ans = nullptr;
 	if (node != nullptr){
 		int lSize = 0;
 		int posNode = 0;
@@ -141,12 +145,11 @@ ABBNode* ABB::k_element_rec(int k, ABBNode* node){
 
 }
 
-ABBNode* ABB::k_element(int k){
+ABBCCNode* ABBCC::k_element(int k){
 	return k_element_rec(k, root);
 }
 
-ABB::~ABB() {
+ABBCC::~ABBCC() {
 	delete root;
 }
-
 } /* namespace eda */
