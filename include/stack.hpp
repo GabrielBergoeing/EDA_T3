@@ -20,6 +20,8 @@ public:
 	void push(Node* node);
 	void pop();
 	Node* top();
+	Node* getTop();
+	void checkSides();
 	bool isEmpty();
 	void clear();
 	virtual ~Stack();

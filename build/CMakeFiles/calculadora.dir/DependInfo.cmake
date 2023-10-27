@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/edauandes/Desktop/EDA_T3/src/abbCC.cpp" "CMakeFiles/calculadora.dir/src/abbCC.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/abbCC.cpp.o.d"
-  "/home/edauandes/Desktop/EDA_T3/src/abbCCNode.cpp" "CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o.d"
+  "/home/edauandes/Desktop/EDA_T3/src/btree.cpp" "CMakeFiles/calculadora.dir/src/btree.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/btree.cpp.o.d"
   "/home/edauandes/Desktop/EDA_T3/src/calculator.cpp" "CMakeFiles/calculadora.dir/src/calculator.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/calculator.cpp.o.d"
   "/home/edauandes/Desktop/EDA_T3/src/node.cpp" "CMakeFiles/calculadora.dir/src/node.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/node.cpp.o.d"
   "/home/edauandes/Desktop/EDA_T3/src/stack.cpp" "CMakeFiles/calculadora.dir/src/stack.cpp.o" "gcc" "CMakeFiles/calculadora.dir/src/stack.cpp.o.d"

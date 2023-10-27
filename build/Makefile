@@ -129,53 +129,29 @@ calculadora/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/build
 .PHONY : calculadora/fast
 
-src/abbCC.o: src/abbCC.cpp.o
-.PHONY : src/abbCC.o
+src/btree.o: src/btree.cpp.o
+.PHONY : src/btree.o
 
 # target to build an object file
-src/abbCC.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abbCC.cpp.o
-.PHONY : src/abbCC.cpp.o
+src/btree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/btree.cpp.o
+.PHONY : src/btree.cpp.o
 
-src/abbCC.i: src/abbCC.cpp.i
-.PHONY : src/abbCC.i
-
-# target to preprocess a source file
-src/abbCC.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abbCC.cpp.i
-.PHONY : src/abbCC.cpp.i
-
-src/abbCC.s: src/abbCC.cpp.s
-.PHONY : src/abbCC.s
-
-# target to generate assembly for a file
-src/abbCC.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abbCC.cpp.s
-.PHONY : src/abbCC.cpp.s
-
-src/abbCCNode.o: src/abbCCNode.cpp.o
-.PHONY : src/abbCCNode.o
-
-# target to build an object file
-src/abbCCNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o
-.PHONY : src/abbCCNode.cpp.o
-
-src/abbCCNode.i: src/abbCCNode.cpp.i
-.PHONY : src/abbCCNode.i
+src/btree.i: src/btree.cpp.i
+.PHONY : src/btree.i
 
 # target to preprocess a source file
-src/abbCCNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abbCCNode.cpp.i
-.PHONY : src/abbCCNode.cpp.i
+src/btree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/btree.cpp.i
+.PHONY : src/btree.cpp.i
 
-src/abbCCNode.s: src/abbCCNode.cpp.s
-.PHONY : src/abbCCNode.s
+src/btree.s: src/btree.cpp.s
+.PHONY : src/btree.s
 
 # target to generate assembly for a file
-src/abbCCNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/abbCCNode.cpp.s
-.PHONY : src/abbCCNode.cpp.s
+src/btree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/btree.cpp.s
+.PHONY : src/btree.cpp.s
 
 src/calculator.o: src/calculator.cpp.o
 .PHONY : src/calculator.o
@@ -282,12 +258,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... calculadora"
-	@echo "... src/abbCC.o"
-	@echo "... src/abbCC.i"
-	@echo "... src/abbCC.s"
-	@echo "... src/abbCCNode.o"
-	@echo "... src/abbCCNode.i"
-	@echo "... src/abbCCNode.s"
+	@echo "... src/btree.o"
+	@echo "... src/btree.i"
+	@echo "... src/btree.s"
 	@echo "... src/calculator.o"
 	@echo "... src/calculator.i"
 	@echo "... src/calculator.s"

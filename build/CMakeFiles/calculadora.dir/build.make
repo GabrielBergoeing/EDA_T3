@@ -83,38 +83,24 @@ CMakeFiles/calculadora.dir/test/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadora.dir/test/test.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edauandes/Desktop/EDA_T3/test/test.cpp -o CMakeFiles/calculadora.dir/test/test.cpp.s
 
-CMakeFiles/calculadora.dir/src/abbCC.cpp.o: CMakeFiles/calculadora.dir/flags.make
-CMakeFiles/calculadora.dir/src/abbCC.cpp.o: ../src/abbCC.cpp
-CMakeFiles/calculadora.dir/src/abbCC.cpp.o: CMakeFiles/calculadora.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/EDA_T3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/calculadora.dir/src/abbCC.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculadora.dir/src/abbCC.cpp.o -MF CMakeFiles/calculadora.dir/src/abbCC.cpp.o.d -o CMakeFiles/calculadora.dir/src/abbCC.cpp.o -c /home/edauandes/Desktop/EDA_T3/src/abbCC.cpp
+CMakeFiles/calculadora.dir/src/btree.cpp.o: CMakeFiles/calculadora.dir/flags.make
+CMakeFiles/calculadora.dir/src/btree.cpp.o: ../src/btree.cpp
+CMakeFiles/calculadora.dir/src/btree.cpp.o: CMakeFiles/calculadora.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/EDA_T3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/calculadora.dir/src/btree.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculadora.dir/src/btree.cpp.o -MF CMakeFiles/calculadora.dir/src/btree.cpp.o.d -o CMakeFiles/calculadora.dir/src/btree.cpp.o -c /home/edauandes/Desktop/EDA_T3/src/btree.cpp
 
-CMakeFiles/calculadora.dir/src/abbCC.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadora.dir/src/abbCC.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edauandes/Desktop/EDA_T3/src/abbCC.cpp > CMakeFiles/calculadora.dir/src/abbCC.cpp.i
+CMakeFiles/calculadora.dir/src/btree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadora.dir/src/btree.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edauandes/Desktop/EDA_T3/src/btree.cpp > CMakeFiles/calculadora.dir/src/btree.cpp.i
 
-CMakeFiles/calculadora.dir/src/abbCC.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadora.dir/src/abbCC.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edauandes/Desktop/EDA_T3/src/abbCC.cpp -o CMakeFiles/calculadora.dir/src/abbCC.cpp.s
-
-CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o: CMakeFiles/calculadora.dir/flags.make
-CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o: ../src/abbCCNode.cpp
-CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o: CMakeFiles/calculadora.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/EDA_T3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o -MF CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o.d -o CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o -c /home/edauandes/Desktop/EDA_T3/src/abbCCNode.cpp
-
-CMakeFiles/calculadora.dir/src/abbCCNode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadora.dir/src/abbCCNode.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edauandes/Desktop/EDA_T3/src/abbCCNode.cpp > CMakeFiles/calculadora.dir/src/abbCCNode.cpp.i
-
-CMakeFiles/calculadora.dir/src/abbCCNode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadora.dir/src/abbCCNode.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edauandes/Desktop/EDA_T3/src/abbCCNode.cpp -o CMakeFiles/calculadora.dir/src/abbCCNode.cpp.s
+CMakeFiles/calculadora.dir/src/btree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadora.dir/src/btree.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edauandes/Desktop/EDA_T3/src/btree.cpp -o CMakeFiles/calculadora.dir/src/btree.cpp.s
 
 CMakeFiles/calculadora.dir/src/node.cpp.o: CMakeFiles/calculadora.dir/flags.make
 CMakeFiles/calculadora.dir/src/node.cpp.o: ../src/node.cpp
 CMakeFiles/calculadora.dir/src/node.cpp.o: CMakeFiles/calculadora.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/EDA_T3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/calculadora.dir/src/node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/EDA_T3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/calculadora.dir/src/node.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculadora.dir/src/node.cpp.o -MF CMakeFiles/calculadora.dir/src/node.cpp.o.d -o CMakeFiles/calculadora.dir/src/node.cpp.o -c /home/edauandes/Desktop/EDA_T3/src/node.cpp
 
 CMakeFiles/calculadora.dir/src/node.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/calculadora.dir/src/node.cpp.s: cmake_force
 CMakeFiles/calculadora.dir/src/stack.cpp.o: CMakeFiles/calculadora.dir/flags.make
 CMakeFiles/calculadora.dir/src/stack.cpp.o: ../src/stack.cpp
 CMakeFiles/calculadora.dir/src/stack.cpp.o: CMakeFiles/calculadora.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/EDA_T3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/calculadora.dir/src/stack.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/EDA_T3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/calculadora.dir/src/stack.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculadora.dir/src/stack.cpp.o -MF CMakeFiles/calculadora.dir/src/stack.cpp.o.d -o CMakeFiles/calculadora.dir/src/stack.cpp.o -c /home/edauandes/Desktop/EDA_T3/src/stack.cpp
 
 CMakeFiles/calculadora.dir/src/stack.cpp.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/calculadora.dir/src/stack.cpp.s: cmake_force
 CMakeFiles/calculadora.dir/src/calculator.cpp.o: CMakeFiles/calculadora.dir/flags.make
 CMakeFiles/calculadora.dir/src/calculator.cpp.o: ../src/calculator.cpp
 CMakeFiles/calculadora.dir/src/calculator.cpp.o: CMakeFiles/calculadora.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/EDA_T3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/calculadora.dir/src/calculator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/EDA_T3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/calculadora.dir/src/calculator.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculadora.dir/src/calculator.cpp.o -MF CMakeFiles/calculadora.dir/src/calculator.cpp.o.d -o CMakeFiles/calculadora.dir/src/calculator.cpp.o -c /home/edauandes/Desktop/EDA_T3/src/calculator.cpp
 
 CMakeFiles/calculadora.dir/src/calculator.cpp.i: cmake_force
@@ -156,8 +142,7 @@ CMakeFiles/calculadora.dir/src/calculator.cpp.s: cmake_force
 # Object files for target calculadora
 calculadora_OBJECTS = \
 "CMakeFiles/calculadora.dir/test/test.cpp.o" \
-"CMakeFiles/calculadora.dir/src/abbCC.cpp.o" \
-"CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o" \
+"CMakeFiles/calculadora.dir/src/btree.cpp.o" \
 "CMakeFiles/calculadora.dir/src/node.cpp.o" \
 "CMakeFiles/calculadora.dir/src/stack.cpp.o" \
 "CMakeFiles/calculadora.dir/src/calculator.cpp.o"
@@ -166,14 +151,13 @@ calculadora_OBJECTS = \
 calculadora_EXTERNAL_OBJECTS =
 
 calculadora: CMakeFiles/calculadora.dir/test/test.cpp.o
-calculadora: CMakeFiles/calculadora.dir/src/abbCC.cpp.o
-calculadora: CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o
+calculadora: CMakeFiles/calculadora.dir/src/btree.cpp.o
 calculadora: CMakeFiles/calculadora.dir/src/node.cpp.o
 calculadora: CMakeFiles/calculadora.dir/src/stack.cpp.o
 calculadora: CMakeFiles/calculadora.dir/src/calculator.cpp.o
 calculadora: CMakeFiles/calculadora.dir/build.make
 calculadora: CMakeFiles/calculadora.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edauandes/Desktop/EDA_T3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable calculadora"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edauandes/Desktop/EDA_T3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable calculadora"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/calculadora.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

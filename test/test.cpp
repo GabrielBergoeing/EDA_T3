@@ -1,5 +1,4 @@
 #include "calculator.hpp"
-#include "abbCC.hpp"
 
 int main() {
     std::cout << """"""" CALCULADORA INTERACTIVA """"""" << std::endl;
@@ -14,7 +13,7 @@ int main() {
         else if (expresion == "ans") std::cout << "= " << variables["ans"] << std::endl;
         else if (expresion == "tree") {
             if (exp == ""){
-                std::cout << "Error: no existe ecuacion registrada para imiprimir!" << std::endl;
+                std::cout << "Error: no existe ecuacion registrada para imprimir!" << std::endl;
             } else {
                 printEquationTree(exp);
             }
@@ -29,7 +28,7 @@ int main() {
                 }
             } if (!isAsign) {
                 exp = infixToPostfix(expresion);    // Se convierte a postfija
-                std::cout << "En expresion postfija: " << exp << std::endl;
+                //std::cout << "En expresion postfija: " << exp << std::endl;
                 std::string aux, exp_final;
 
                 for (int i=0;i<exp.length();i++) {      // Se reempalzan las variables, si hay

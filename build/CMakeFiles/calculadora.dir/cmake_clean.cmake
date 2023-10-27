@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/calculadora.dir/src/abbCC.cpp.o"
-  "CMakeFiles/calculadora.dir/src/abbCC.cpp.o.d"
-  "CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o"
-  "CMakeFiles/calculadora.dir/src/abbCCNode.cpp.o.d"
+  "CMakeFiles/calculadora.dir/src/btree.cpp.o"
+  "CMakeFiles/calculadora.dir/src/btree.cpp.o.d"
   "CMakeFiles/calculadora.dir/src/calculator.cpp.o"
   "CMakeFiles/calculadora.dir/src/calculator.cpp.o.d"
   "CMakeFiles/calculadora.dir/src/node.cpp.o"
