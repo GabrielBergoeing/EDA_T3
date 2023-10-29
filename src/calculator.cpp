@@ -107,7 +107,7 @@ int solveCalculation(std::string str) {
             aux="";
         } 
         else if (c <= '9' && c >= '0') aux+=c;
-        else {
+        else {  // Si no es numero o espacio...
             if (c == '-' && str[i+1] != ' ') aux+="-";
             else {
                 for (int j = 0; j<5; j++) {
